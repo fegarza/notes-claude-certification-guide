@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:claudecertificationguide.com)",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://claudecertificationguide.com/learn/2-tool-design-mcp/2-1-tool-schema-design\" -o /tmp/page.html)",
+      "Read(//tmp/**)",
+      "Bash(awk '{print length, NR}')",
+      "Bash(python3)",
+      "Bash(grep -o \"##[^\\\\\\\\\\\\\\\\]*\" nextdata.txt)",
+      "Bash(awk 'END{print NR}' nextdata.txt)",
+      "Bash(grep -o '\\\\\\\\\\\\\\\\n' nextdata.txt)",
+      "Bash(grep -o 'Before splitting.\\\\{0,20\\\\}' nextdata.txt)"
+    ]
+  }
+}

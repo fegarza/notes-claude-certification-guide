@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789691412883-bdn8uruko",
+  "providerId": "claude",
+  "title": "Hello",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1789691412893,
+  "lastActivityAt": 1789691806388,
+  "sessionId": "11845dab-e487-40ba-963d-3b69d8deb0fe",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "11845dab-e487-40ba-963d-3b69d8deb0fe"
+  },
+  "linkedContentPath": "2 Tool Design & MCP Integration/Tool Interface Design.md"
+}

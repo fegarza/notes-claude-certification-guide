@@ -1,0 +1,260 @@
+{
+  "main": {
+    "id": "0b3a9b52b120ef5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c27074914ce77673",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6b01a69be0ad3c0a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cd1743d7889fab3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d10a90fcf0fe5f99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5a217358fa5253c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "c3219dc6fb0bd94e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "09917cc6cea7c509",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 483.66937255859375
+  },
+  "right": {
+    "id": "4bebf2b7d88b9c8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "848791563ded1a4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92056d05dcfdb6d7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2 Tool Design & MCP Integration/Tool Interface Design.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "0772779feaa42fd7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2 Tool Design & MCP Integration/Tool Interface Design.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "f97601d0249f410a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "97e4793e0b94d70e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "de1ce32af42a09c2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2 Tool Design & MCP Integration/Tool Interface Design.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          },
+          {
+            "id": "6daba1a0b2f75587",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          },
+          {
+            "id": "1dff3cbea3cdc524",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1789691407347-bnr9brw",
+                      "conversationId": "conv-1789691412883-bdn8uruko"
+                    }
+                  ],
+                  "activeTabId": "tab-1789691407347-bnr9brw"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 299.7037353515625,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "realclaudian:Open Claudian": false
+    }
+  },
+  "active": "6b01a69be0ad3c0a",
+  "lastOpenFiles": [
+    "1 Agentic Architecture and orchestation/7 Session State and Resumption/2 example.md.tmp.38232.5575c757061d",
+    "1 Agentic Architecture and orchestation/7 Session State and Resumption/3 cuestionario.md.tmp.38232.afc8d02faba7",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/3 cuestionario.md",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/2 example.md",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md.tmp.38232.df639f15638c",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md.tmp.38232.767ef3e085a1",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md.tmp.38232.1ea89a37e3c8",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen.md",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/3 cuestionario.md.tmp.38232.8a3555e263e9",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md.tmp.38232.076cc6b2be01",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/2 example.md",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/4 test.md.tmp.38232.9f76b9373cbe",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/3 cuestionario.md.tmp.38232.c1a56eaaa39d",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/4 test.md",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/3 cuestionario.md",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/2 example.md",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/4 test.md.tmp.38232.9fdebfd3e457",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/3 cuestionario.md.tmp.38232.0e0ba7ec1323",
+    "1 Agentic Architecture and orchestation/Sin título.md",
+    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/2 example.md",
+    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/1 resumen.md",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/5 results.md",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/4 test.md",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/3 cuestionario.md",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/2 example.md",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen.md",
+    "general understanding.md",
+    "CLAUDE.md",
+    "Repaso.md",
+    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/4 test.md",
+    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/3 cuestionario.md",
+    "1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/2 example.md",
+    "1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen.md"
+  ]
+}

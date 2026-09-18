@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789691412883-bdn8uruko",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789691413032-8ppdouj",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789691412880-lkrydmc",
+      "timestamp": 1789691412880,
+      "rawDisplayText": "Hello",
+      "canonicalText": "Hello",
+      "context": {
+        "linkedContent": {
+          "path": "2 Tool Design & MCP Integration/Tool Interface Design.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "caea31fe37e7ce856085f6a34b041d6b77cfd516d0268eabe32e5149d2808465",
+      "providerUserMessageId": "523a3fb7-7019-4990-b47d-615fb92f93bc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789691445547-olnpdfu",
+      "userTurnOrdinal": 2,
+      "state": "staged",
+      "localMessageId": "msg-1789691445545-6kx2iek",
+      "timestamp": 1789691445545,
+      "rawDisplayText": "Hello",
+      "canonicalText": "Hello",
+      "images": [],
+      "contentDigest": "caea31fe37e7ce856085f6a34b041d6b77cfd516d0268eabe32e5149d2808465"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789691755989-2h2bjij",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789691755973-ydm6w76",
+      "timestamp": 1789691755976,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "361660dd-f8f3-43c0-bac3-a6c366e6b9f3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789691776602-8yj0nmg",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789691776593-mymvsqe",
+      "timestamp": 1789691776593,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "0fcacc1b-6131-4ec1-bf8e-9142b3b57946"
+    }
+  ]
+}
