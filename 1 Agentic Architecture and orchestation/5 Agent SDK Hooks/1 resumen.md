@@ -23,10 +23,10 @@ El oficial de la entrada es `PreToolUse`: se ejecuta **antes** de que la herrami
 
 **Valores de retorno** (la forma concreta en que cada hook ejerce su poder):
 
-| Hook | Qué devuelve | Para qué sirve |
-|---|---|---|
-| `PreToolUse` | `permissionDecision` (`allow` / `deny` / `ask` / `defer`) + opcionalmente `updatedInput` | Bloquear, aprobar, pedir confirmación, o reescribir los argumentos de la llamada antes de que corra |
-| `PostToolUse` | `updatedToolOutput` (reemplaza el ya obsoleto `updatedMCPToolOutput`) | Sustituir el resultado que el modelo va a ver, sin tocar lo que ya ocurrió en el sistema real |
+| Hook          | Qué devuelve                                                                             | Para qué sirve                                                                                      |
+| ------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `PreToolUse`  | `permissionDecision` (`allow` / `deny` / `ask` / `defer`) + opcionalmente `updatedInput` | Bloquear, aprobar, pedir confirmación, o reescribir los argumentos de la llamada antes de que corra |
+| `PostToolUse` | `updatedToolOutput` (reemplaza el ya obsoleto `updatedMCPToolOutput`)                    | Sustituir el resultado que el modelo va a ver, sin tocar lo que ya ocurrió en el sistema real       |
 
 > [!note] Idea clave del examen
 > "Los hooks `PostToolUse` transforman datos **después** de la ejecución. Los hooks `PreToolUse` aplican políticas **antes** de la ejecución. Saber en qué dirección opera cada uno es exactamente lo que el examen evalúa."
@@ -59,10 +59,10 @@ Tres patrones de uso, todos con la misma forma (interceptar → evaluar una cond
 
 La misma lógica de "determinista vs. probabilístico" de [[4 Workflow Enforcement and Handoff/1 resumen|Workflow Enforcement and Handoff]] se aplica aquí en forma de tabla de decisión:
 
-| Requisito | Mecanismo | Garantía |
-|---|---|---|
-| Debe cumplirse el 100% de las veces | Hooks | Determinista |
-| Preferible, pero una desviación ocasional es aceptable | Prompts | Probabilística |
+| Requisito                                              | Mecanismo | Garantía       |
+| ------------------------------------------------------ | --------- | -------------- |
+| Debe cumplirse el 100% de las veces                    | Hooks     | Determinista   |
+| Preferible, pero una desviación ocasional es aceptable | Prompts   | Probabilística |
 
 Criterio de decisión:
 

@@ -1,4 +1,4 @@
-# General Understanding — CCAR-F
+# README — CCAR-F Vault
 
 > [!info] Registro acumulado de evaluaciones con [[tutor-socratico]]
 > Se actualiza automáticamente cada vez que se corre una sesión de tutor socrático sobre un tema.
@@ -8,12 +8,12 @@
 | #   | Tema                                                                                                                                     | % Entendimiento | Última evaluación |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------- |
 | 1   | [[1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen\|Agentic loop]]                                                       | 75/100          | 2026-09-18        |
-| 2   | [[1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen\|Multi-Agent Orchestration]]                             |                 |                   |
-| 3   | [[1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/1 resumen\|Subagent Invocation and Context Passing]] |                 |                   |
-| 4   | [[1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen\|Workflow Enforcement and Handoff]]               |                 |                   |
-| 5   | [[1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen\|Agent SDK Hooks]]                                                 |                 |                   |
-| 6   | [[1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen\|Task Decomposition Strategies]]                     |                 |                   |
-| 7   | [[1 Agentic Architecture and orchestation/7 Session State and Resumption/1 resumen\|Session State and Resumption]]                       |                 |                   |
+| 2   | [[1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen\|Multi-Agent Orchestration]]                             | 90/100          | 2026-09-18        |
+| 3   | [[1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/1 resumen\|Subagent Invocation and Context Passing]] | 97/100          | 2026-09-18        |
+| 4   | [[1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen\|Workflow Enforcement and Handoff]]               | 77/100          | 2026-09-18        |
+| 5   | [[1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen\|Agent SDK Hooks]]                                                 | 68/100          | 2026-09-19        |
+| 6   | [[1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen\|Task Decomposition Strategies]]                     | 78/100          | 2026-09-19        |
+| 7   | [[1 Agentic Architecture and orchestation/7 Session State and Resumption/1 resumen\|Session State and Resumption]]                       | 96/100          | 2026-09-19        |
 
 ## 2 Tool Design & MCP Integration
 

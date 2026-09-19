@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c27074914ce77673",
+        "id": "c6bb9743db913bfc",
         "type": "tabs",
         "children": [
           {
-            "id": "6b01a69be0ad3c0a",
+            "id": "cb96bf3ef8f0732e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "README"
             }
           }
         ]
@@ -79,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 483.66937255859375
+    "width": 347.7609443664551
   },
   "right": {
     "id": "4bebf2b7d88b9c8a",
@@ -167,16 +171,6 @@
             }
           },
           {
-            "id": "6daba1a0b2f75587",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
-            }
-          },
-          {
             "id": "1dff3cbea3cdc524",
             "type": "leaf",
             "state": {
@@ -195,6 +189,16 @@
               },
               "icon": "bot",
               "title": "Claudian"
+            }
+          },
+          {
+            "id": "6f9a9d04883379e9",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
             }
           }
         ],
@@ -218,43 +222,42 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6b01a69be0ad3c0a",
+  "active": "cb96bf3ef8f0732e",
   "lastOpenFiles": [
-    "1 Agentic Architecture and orchestation/7 Session State and Resumption/2 example.md.tmp.38232.5575c757061d",
-    "1 Agentic Architecture and orchestation/7 Session State and Resumption/3 cuestionario.md.tmp.38232.afc8d02faba7",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/3 cuestionario.md",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/2 example.md",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md.tmp.38232.df639f15638c",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md.tmp.38232.767ef3e085a1",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/4 test.md.tmp.38232.1ea89a37e3c8",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen.md",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/3 cuestionario.md.tmp.38232.8a3555e263e9",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md.tmp.38232.076cc6b2be01",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/2 example.md",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/4 test.md.tmp.38232.9f76b9373cbe",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/3 cuestionario.md.tmp.38232.c1a56eaaa39d",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/4 test.md",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/3 cuestionario.md",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/2 example.md",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/4 test.md.tmp.38232.9fdebfd3e457",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/3 cuestionario.md.tmp.38232.0e0ba7ec1323",
-    "1 Agentic Architecture and orchestation/Sin título.md",
-    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/2 example.md",
-    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/1 resumen.md",
+    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md",
+    "README.md.tmp.23732.b99f642fc23e",
+    "README.md",
+    "general understanding.md",
+    "5 Context Management & Reliability/1 Context Window Management/4 test.md.tmp.23732.bacf7171b324",
+    "examguide.pdf",
     "1 Agentic Architecture and orchestation/1 Agentic loop/5 results.md",
+    "5 Context Management & Reliability/1 Context Window Management/3 cuestionario.md.tmp.23732.f48f6591a2a4",
+    "5 Context Management & Reliability/1 Context Window Management/2 example.md.tmp.23732.7e51f0233a7f",
+    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md.tmp.23732.5a94e09f11cd",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen.md",
     "1 Agentic Architecture and orchestation/1 Agentic loop/4 test.md",
     "1 Agentic Architecture and orchestation/1 Agentic loop/3 cuestionario.md",
     "1 Agentic Architecture and orchestation/1 Agentic loop/2 example.md",
-    "1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen.md",
-    "general understanding.md",
-    "CLAUDE.md",
-    "Repaso.md",
-    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/4 test.md",
-    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/3 cuestionario.md",
-    "1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/2 example.md",
-    "1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen.md"
+    "5 Context Management & Reliability/1 Context Window Management/4 test.md",
+    "5 Context Management & Reliability/1 Context Window Management/3 cuestionario.md",
+    "5 Context Management & Reliability/1 Context Window Management/2 example.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/4 test.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/3 cuestionario.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/2 example.md",
+    "2 Tool Design & MCP Integration/4 MCP Server Integration/4 test.md",
+    "2 Tool Design & MCP Integration/4 MCP Server Integration/3 cuestionario.md",
+    "2 Tool Design & MCP Integration/4 MCP Server Integration/2 example.md",
+    "2 Tool Design & MCP Integration/4 MCP Server Integration/1 resumen.md",
+    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/3 cuestionario.md",
+    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/4 test.md",
+    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/2 example.md",
+    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen.md",
+    "2 Tool Design & MCP Integration/2 Structured Error Responses/4 test.md",
+    "2 Tool Design & MCP Integration/2 Structured Error Responses/3 cuestionario.md",
+    "1 Agentic Architecture and orchestation/7 Session State and Resumption/5 results.md.tmp.23732.2991435c26c2",
+    "general understanding.md.tmp.23732.b54cc634e6e4",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/5 results.md.tmp.23732.05968c5dcf63",
+    "CLAUDE.md.tmp.23732.05a9290565e3"
   ]
 }

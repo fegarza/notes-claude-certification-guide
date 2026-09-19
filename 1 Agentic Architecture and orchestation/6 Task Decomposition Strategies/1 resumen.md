@@ -3,7 +3,7 @@
 
 ## Explícamelo como si tuviera 5 años
 
-Imagina dos formas de hacer una tarea larga. La primera es como seguir una **receta de cocina**: ya sabes que primero picas la cebolla, luego la sofríes, luego agregas el arroz — el orden está escrito antes de empezar y no cambia aunque la cebolla huela raro. La segunda es como ser un **detective**: llegas a la escena sin saber qué vas a encontrar, sigues la primera pista, y esa pista te dice a dónde ir después — el plan se escribe *mientras* investigas, no antes.
+Imagina dos formas de hacer una tarea larga. La primera es como seguir una **receta de cocina**: ya sabes que primero picas la cebolla, luego la sofríes, luego agregas el arroz — ~={red}el orden está escrito antes de empezar y no cambia=~ aunque la cebolla huela raro. La segunda es como ser un **detective**: llegas a la escena ~={red}sin saber qué vas a encontrar=~, sigues la primera pista, y esa pista te dice a dónde ir después — el plan se escribe *mientras* investigas, no antes.
 
 Ningún método es "mejor" en abstracto: usar la receta para investigar un crimen es absurdo (no sabes los pasos de antemano), y usar el método del detective para cocinar arroz es un desperdicio (ya sabes exactamente qué hacer). La pregunta que decide cuál usar es siempre la misma: **¿conozco los pasos desde el principio, o los voy a descubrir sobre la marcha?**
 
@@ -36,7 +36,7 @@ Ahora imagina un segundo problema, independiente del primero: un maestro que cor
 | Extracción de datos de documentos | Pipeline fijo | Los campos y el formato están predeterminados |
 | Depurar un sistema desconocido | Decomposición dinámica | La causa raíz es desconocida; la investigación debe adaptarse |
 
-- **Skill concreta para decomposición dinámica**: ante una tarea abierta como "agregar tests exhaustivos a un codebase legacy", el patrón correcto es primero **mapear la estructura**, luego **identificar las áreas de mayor impacto**, y recién ahí **crear un plan priorizado que se adapta** a medida que se descubren dependencias — no intentar escribir el plan completo desde el día uno.
+- **Skill concreta para decomposición dinámica**: ante una tarea abierta como "agregar tests exhaustivos a un codebase legacy", el patrón correcto es primero ==**mapear la estructura**, luego **identificar las áreas de mayor impacto**, y recién ahí **crear un plan priorizado que se adapta** a medida que se descubren dependencias== — no intentar escribir el plan completo desde el día uno.
 
 > [!warning] Por qué la tabla no es "memoriza estos 6 ejemplos"
 > El examen no va a repetir literalmente "revisión de código" o "codebase legacy" — va a describir un escenario nuevo y esperar que apliques el mismo criterio: ¿los pasos se conocen de antemano o no? Memorizar el criterio, no la lista de ejemplos.

@@ -44,6 +44,10 @@ Cuando se pida trabajar un tema completo, se generan/actualizan los 4. Cuando se
 
 Los wikilinks internos entre estos 4 archivos deben usar el nombre completo con su número (ej. `[[1 resumen]]`, `[[2 example]]`), no el alias corto sin número.
 
+### Convención de idioma: conceptos clave en inglés
+
+En `1 resumen.md`, `2 example.md` y `3 cuestionario.md` (los tres archivos en español), el texto en general va en español, pero los **términos/conceptos clave de la guía** se dejan en inglés, sin traducir — tal como aparecen en la fuente (ej. `prompt chaining`, `tool use`, `hooks`, `stop_reason`, nombres de parámetros, flags, campos de API, nombres de patrones de arquitectura como "hub-and-spoke" o "Narrow Decomposition Failure"). No se traduce un término técnico solo por escribir el resumen en español — se mantiene el nombre en inglés que usa la certificación, para que el vocabulario coincida con el que aparece en el examen real (que sí es en inglés, ver `4 test.md`).
+
 ### Método ACERO para tomar y organizar apuntes (aplica a `1 resumen.md`)
 
 Antes de redactar, filtra y clasifica el contenido de la fuente con el método **ACERO**:

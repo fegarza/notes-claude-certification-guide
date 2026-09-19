@@ -38,7 +38,7 @@ La trampa es pensar que "seguir donde quedaron" siempre es lo más eficiente. Si
 
 ### 3. Opción 3 — inicio limpio con resumen inyectado (fresh start + summary injection)
 
-- Empieza una sesión **completamente nueva**, inyectando en el contexto inicial un **resumen estructurado** de los hallazgos previos. No contiene resultados de herramientas obsoletos — solo resúmenes curados.
+- Empieza una sesión **completamente nueva**, inyectando en el contexto inicial un **resumen estructurado** de los hallazgos previos. ~={red}No contiene resultados de herramientas obsoletos — solo resúmenes curados=~.
 - **Úsalo cuando**: los resultados de herramientas de la sesión previa están obsoletos (archivos modificados, APIs actualizadas, dependencias cambiadas) o el contexto se degradó tras una sesión muy larga.
 - **No lo uses cuando**: el contexto previo sigue siendo válido y quieres mantener el historial completo de conversación — en ese caso, `--resume` es más eficiente.
 
