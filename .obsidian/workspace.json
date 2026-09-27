@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c6bb9743db913bfc",
+        "id": "b133430a78d12971",
         "type": "tabs",
         "children": [
           {
-            "id": "cb96bf3ef8f0732e",
+            "id": "92bcb8b041a01095",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "1 resumen"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.7609443664551
+    "width": 424.5942573547363
   },
   "right": {
     "id": "4bebf2b7d88b9c8a",
@@ -222,42 +222,42 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "cb96bf3ef8f0732e",
+  "active": "92bcb8b041a01095",
   "lastOpenFiles": [
-    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md",
-    "README.md.tmp.23732.b99f642fc23e",
+    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/4 test.md.tmp.5196.9368e4cc55a6",
+    "3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen.md.tmp.5196.09dcb367894f",
     "README.md",
-    "general understanding.md",
-    "5 Context Management & Reliability/1 Context Window Management/4 test.md.tmp.23732.bacf7171b324",
     "examguide.pdf",
-    "1 Agentic Architecture and orchestation/1 Agentic loop/5 results.md",
-    "5 Context Management & Reliability/1 Context Window Management/3 cuestionario.md.tmp.23732.f48f6591a2a4",
-    "5 Context Management & Reliability/1 Context Window Management/2 example.md.tmp.23732.7e51f0233a7f",
-    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md.tmp.23732.5a94e09f11cd",
-    "1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen.md",
-    "1 Agentic Architecture and orchestation/1 Agentic loop/4 test.md",
-    "1 Agentic Architecture and orchestation/1 Agentic loop/3 cuestionario.md",
-    "1 Agentic Architecture and orchestation/1 Agentic loop/2 example.md",
-    "5 Context Management & Reliability/1 Context Window Management/4 test.md",
-    "5 Context Management & Reliability/1 Context Window Management/3 cuestionario.md",
-    "5 Context Management & Reliability/1 Context Window Management/2 example.md",
-    "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
-    "2 Tool Design & MCP Integration/5 Built-in Tools/4 test.md",
-    "2 Tool Design & MCP Integration/5 Built-in Tools/3 cuestionario.md",
-    "2 Tool Design & MCP Integration/5 Built-in Tools/2 example.md",
-    "2 Tool Design & MCP Integration/4 MCP Server Integration/4 test.md",
-    "2 Tool Design & MCP Integration/4 MCP Server Integration/3 cuestionario.md",
-    "2 Tool Design & MCP Integration/4 MCP Server Integration/2 example.md",
-    "2 Tool Design & MCP Integration/4 MCP Server Integration/1 resumen.md",
-    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/3 cuestionario.md",
-    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/4 test.md",
-    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/2 example.md",
-    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen.md",
-    "2 Tool Design & MCP Integration/2 Structured Error Responses/4 test.md",
-    "2 Tool Design & MCP Integration/2 Structured Error Responses/3 cuestionario.md",
-    "1 Agentic Architecture and orchestation/7 Session State and Resumption/5 results.md.tmp.23732.2991435c26c2",
-    "general understanding.md.tmp.23732.b54cc634e6e4",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/5 results.md.tmp.23732.05968c5dcf63",
-    "CLAUDE.md.tmp.23732.05a9290565e3"
+    "3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen.md",
+    "README.md.tmp.40764.1161fd2a9fe5",
+    "3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/5 results.md",
+    "3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/5 results.md.tmp.40764.7f53520258f9",
+    "3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/2 example.md",
+    "1 Agentic Architecture and orchestation/7 Session State and Resumption/1 resumen.md",
+    "README.md.tmp.40764.352ff3d611a9",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/5 results.md",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/5 results.md.tmp.40764.be73c6f3fe9d",
+    "Sin título.base",
+    "3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/2 example.md",
+    "3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/3 cuestionario.md",
+    "3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/2 example.md",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/3 cuestionario.md",
+    "3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/4 test.md.tmp.11060.d8893c724926",
+    "3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/4 test.md.tmp.11060.77317955c4a5",
+    "4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/1 resumen.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/3 cuestionario.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/2 example.md",
+    "5 Context Management & Reliability/2 Escalation & Ambiguity Resolution/1 resumen.md",
+    "5 Context Management & Reliability/3 Error Propagation in Multi-Agent Systems/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/4 test.md",
+    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/2 example.md",
+    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/3 cuestionario.md",
+    "5 Context Management & Reliability/3 Error Propagation in Multi-Agent Systems/3 cuestionario.md"
   ]
 }

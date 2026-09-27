@@ -29,8 +29,8 @@
 
 | # | Tema | % Entendimiento | Última evaluación |
 |---|---|---|---|
-| 1 | [[3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen\|CLAUDE.md Hierarchy, Scoping, and Modular Organisation]] | | |
-| 2 | [[3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/1 resumen\|Custom Slash Commands and Skills]] | | |
+| 1 | [[3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen\|CLAUDE.md Hierarchy, Scoping, and Modular Organisation]] | 78/100 | 2026-09-26 |
+| 2 | [[3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/1 resumen\|Custom Slash Commands and Skills]] | 78/100 | 2026-09-26 |
 | 3 | [[3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/1 resumen\|Path-Specific Rules for Conditional Convention Loading]] | | |
 | 4 | [[3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen\|Plan Mode vs Direct Execution]] | | |
 | 5 | [[3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/1 resumen\|Iterative Refinement Techniques]] | | |
@@ -40,8 +40,8 @@
 
 | # | Tema | % Entendimiento | Última evaluación |
 |---|---|---|---|
-| 1 | [[4 Prompt Engineering & Structured Output/1 System Prompts with Explicit Criteria/1 resumen\|System Prompts with Explicit Criteria]] | | |
-| 2 | [[4 Prompt Engineering & Structured Output/2 Few-Shot Prompting/1 resumen\|Few-Shot Prompting]] | | |
+| 1 | [[4 Prompt Engineering & Structured Output/1 System Prompts with Explicit Criteria/1 resumen\|System Prompts with Explicit Criteria]] | 90/100 | 2026-09-20 |
+| 2 | [[4 Prompt Engineering & Structured Output/2 Few-Shot Prompting/1 resumen\|Few-Shot Prompting]] | 74/100 | 2026-09-21 |
 | 3 | [[4 Prompt Engineering & Structured Output/3 Structured Output with Tool Use/1 resumen\|Structured Output with Tool Use]] | | |
 | 4 | [[4 Prompt Engineering & Structured Output/4 Validation, Retry, and Feedback Loops/1 resumen\|Validation, Retry, and Feedback Loops]] | | |
 | 5 | [[4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/1 resumen\|Batch Processing Strategies]] | | |

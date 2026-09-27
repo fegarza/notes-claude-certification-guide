@@ -85,12 +85,12 @@ Si cada corrida analiza el PR completo desde cero, sin saber qué se reportó an
 
 **Salida y límites en modo headless (`-p`):**
 
-| Flag | Efecto |
-|---|---|
-| `--output-format text\|json\|stream-json` | Formato de salida |
-| `--input-format text\|stream-json` | Formato de entrada |
-| `--json-schema '<schema>'` | Salida validada contra un schema |
-| `--max-turns <n>` | Límite de turnos agénticos antes de salir |
+| Flag                                      | Efecto                                    |
+| ----------------------------------------- | ----------------------------------------- |
+| `--output-format text\|json\|stream-json` | Formato de salida                         |
+| `--input-format text\|stream-json`        | Formato de entrada                        |
+| `--json-schema '<schema>'`                | Salida validada contra un schema          |
+| `--max-turns <n>`                         | Límite de turnos agénticos antes de salir |
 
 **Permisos, herramientas y contexto:**
 
@@ -133,12 +133,12 @@ Al generar tests en CI, incluir los archivos de test ya existentes en el context
 ### Batch API vs. tiempo real para workflows de CI
 La Message Batches API da 50% de ahorro en costo, pero puede tardar hasta 24 horas en procesar, sin SLA de latencia garantizado.
 
-| Tipo de workflow | API a usar | Por qué |
-|---|---|---|
+| Tipo de workflow                  | API a usar             | Por qué                                      |
+| --------------------------------- | ---------------------- | -------------------------------------------- |
 | Checks bloqueantes antes de merge | Tiempo real (síncrona) | El desarrollador está esperando el resultado |
-| Reporte nocturno de deuda técnica | Batch API | No es urgente, ahorra 50% |
-| Auditoría semanal de código | Batch API | Programada, tolera latencia |
-| Generación de tests nocturna | Batch API | Corre de noche, se revisa al día siguiente |
+| Reporte nocturno de deuda técnica | Batch API              | No es urgente, ahorra 50%                    |
+| Auditoría semanal de código       | Batch API              | Programada, tolera latencia                  |
+| Generación de tests nocturna      | Batch API              | Corre de noche, se revisa al día siguiente   |
 
 ## Trampas de examen
 
