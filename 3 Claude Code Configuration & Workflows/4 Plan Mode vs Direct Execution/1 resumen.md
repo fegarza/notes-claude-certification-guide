@@ -33,11 +33,11 @@ Plan mode es para tareas complejas donde hay que **explorar el codebase, evaluar
 
 Plan mode **se activa cambiando de modo, no pidiéndolo en el texto**. Tres rutas:
 
-| Ruta | Cuándo |
-|---|---|
-| `claude --permission-mode plan` | Al iniciar la sesión |
-| `Shift+Tab` | Durante la sesión, hasta que la status bar muestre plan mode activo |
-| Prefijo `/plan` en un prompt | Para un solo prompt |
+| Ruta                            | Cuándo                                                              |
+| ------------------------------- | ------------------------------------------------------------------- |
+| `claude --permission-mode plan` | Al iniciar la sesión                                                |
+| `Shift+Tab`                     | Durante la sesión, hasta que la status bar muestre plan mode activo |
+| Prefijo `/plan` en un prompt    | Para un solo prompt                                                 |
 
 > [!warning] Detalle fino
 > Escribir "in plan mode" **dentro del cuerpo** de un prompt **no hace nada**. `/plan` **al inicio** del prompt sí lo activa.

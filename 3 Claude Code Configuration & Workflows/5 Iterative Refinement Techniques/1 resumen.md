@@ -84,6 +84,14 @@ FAIL: testMigrationHandlesNullValues
 > [!note] Relación con la técnica 1
 > Un test case con input de ejemplo y output esperado **es** un ejemplo concreto, pero ejecutable y repetible. Por eso el examen pide "proveer test cases específicos con input de ejemplo y output esperado" para arreglar el manejo de edge cases (ej. valores `null` en scripts de migración).
 
+| | Concrete input/output examples | Test-driven iteration |
+|---|---|---|
+| **Problema que resuelve** | La prosa se interpreta distinto cada vez | Transformación compleja con muchos edge cases |
+| **Rol del ejemplo** | Enseña el patrón para que el modelo **generalice** | **Verifica** si el resultado cumple o no |
+| **Cobertura** | 2-3 pares before/after (caso estándar + edge case clave) | Happy path, edge cases (`null`, vacíos, fronteras), performance |
+| **Feedback** | Se prueba la generalización con un caso nuevo | Test failures "Expected X, got Y", sin espacio para interpretación |
+| **Ciclo** | Mostrar ejemplos una vez y verificar | Correr tests → compartir fallos → repetir |
+
 ### 4. Interview pattern — la técnica para dominios desconocidos
 
 - **Cuándo**: trabajas en un dominio donde te falta experiencia y podrías pasar por alto consideraciones importantes.

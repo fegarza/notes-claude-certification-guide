@@ -17,24 +17,24 @@
 
 ## 2 Tool Design & MCP Integration
 
-| # | Tema | % Entendimiento | Última evaluación |
-|---|---|---|---|
-| 1 | [[2 Tool Design & MCP Integration/1 Tool Interface Design/1 resumen\|Tool Interface Design]] | | |
-| 2 | [[2 Tool Design & MCP Integration/2 Structured Error Responses/1 resumen\|Structured Error Responses]] | | |
-| 3 | [[2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen\|Tool Distribution & Tool Choice]] | | |
-| 4 | [[2 Tool Design & MCP Integration/4 MCP Server Integration/1 resumen\|MCP Server Integration]] | | |
-| 5 | [[2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen\|Built-in Tools]] | | |
+| #   | Tema                                                                                                             | % Entendimiento | Última evaluación |
+| --- | ---------------------------------------------------------------------------------------------------------------- | --------------- | ----------------- |
+| 1   | [[2 Tool Design & MCP Integration/1 Tool Interface Design/1 resumen\|Tool Interface Design]]                     | 76/100          | 2026-10-07        |
+| 2   | [[2 Tool Design & MCP Integration/2 Structured Error Responses/1 resumen\|Structured Error Responses]]           | 78/100          | 2026-10-06        |
+| 3   | [[2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen\|Tool Distribution & Tool Choice]] |                 |                   |
+| 4   | [[2 Tool Design & MCP Integration/4 MCP Server Integration/1 resumen\|MCP Server Integration]]                   |                 |                   |
+| 5   | [[2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen\|Built-in Tools]]                                   |                 |                   |
 
 ## 3 Claude Code Configuration & Workflows
 
-| # | Tema | % Entendimiento | Última evaluación |
-|---|---|---|---|
-| 1 | [[3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen\|CLAUDE.md Hierarchy, Scoping, and Modular Organisation]] | 78/100 | 2026-09-26 |
-| 2 | [[3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/1 resumen\|Custom Slash Commands and Skills]] | 78/100 | 2026-09-26 |
-| 3 | [[3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/1 resumen\|Path-Specific Rules for Conditional Convention Loading]] | | |
-| 4 | [[3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen\|Plan Mode vs Direct Execution]] | | |
-| 5 | [[3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/1 resumen\|Iterative Refinement Techniques]] | | |
-| 6 | [[3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen\|CI-CD Integration]] | | |
+| #   | Tema                                                                                                                                                                   | % Entendimiento | Última evaluación |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------- |
+| 1   | [[3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen\|CLAUDE.md Hierarchy, Scoping, and Modular Organisation]] | 78/100          | 2026-09-26        |
+| 2   | [[3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/1 resumen\|Custom Slash Commands and Skills]]                                             | 78/100          | 2026-09-26        |
+| 3   | [[3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/1 resumen\|Path-Specific Rules for Conditional Convention Loading]] | 86/100          | 2026-09-27        |
+| 4   | [[3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen\|Plan Mode vs Direct Execution]]                                                   | 77/100          | 2026-09-27        |
+| 5   | [[3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/1 resumen\|Iterative Refinement Techniques]]                                               | 88/100          | 2026-09-29        |
+| 6   | [[3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen\|CI-CD Integration]]                                                                           | 70/100          | 2026-09-27        |
 
 ## 4 Prompt Engineering & Structured Output
 
@@ -42,18 +42,18 @@
 |---|---|---|---|
 | 1 | [[4 Prompt Engineering & Structured Output/1 System Prompts with Explicit Criteria/1 resumen\|System Prompts with Explicit Criteria]] | 90/100 | 2026-09-20 |
 | 2 | [[4 Prompt Engineering & Structured Output/2 Few-Shot Prompting/1 resumen\|Few-Shot Prompting]] | 74/100 | 2026-09-21 |
-| 3 | [[4 Prompt Engineering & Structured Output/3 Structured Output with Tool Use/1 resumen\|Structured Output with Tool Use]] | | |
+| 3 | [[4 Prompt Engineering & Structured Output/3 Structured Output with Tool Use/1 resumen\|Structured Output with Tool Use]] | 86/100 | 2026-10-08 |
 | 4 | [[4 Prompt Engineering & Structured Output/4 Validation, Retry, and Feedback Loops/1 resumen\|Validation, Retry, and Feedback Loops]] | | |
 | 5 | [[4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/1 resumen\|Batch Processing Strategies]] | | |
 | 6 | [[4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/1 resumen\|Multi-Instance and Multi-Pass Review]] | | |
 
 ## 5 Context Management & Reliability
 
-| # | Tema | % Entendimiento | Última evaluación |
-|---|---|---|---|
-| 1 | [[5 Context Management & Reliability/1 Context Window Management/1 resumen\|Context Window Management]] | | |
-| 2 | [[5 Context Management & Reliability/2 Escalation & Ambiguity Resolution/1 resumen\|Escalation & Ambiguity Resolution]] | | |
-| 3 | [[5 Context Management & Reliability/3 Error Propagation in Multi-Agent Systems/1 resumen\|Error Propagation in Multi-Agent Systems]] | | |
-| 4 | [[5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen\|Codebase Exploration & Context Degradation]] | | |
-| 5 | [[5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen\|Human Review & Confidence Calibration]] | | |
-| 6 | [[5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen\|Information Provenance & Multi-Source Synthesis]] | | |
+| #   | Tema                                                                                                                                                | % Entendimiento | Última evaluación |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------- |
+| 1   | [[5 Context Management & Reliability/1 Context Window Management/1 resumen\|Context Window Management]]                                             | 85/100          | 2026-10-01        |
+| 2   | [[5 Context Management & Reliability/2 Escalation & Ambiguity Resolution/1 resumen\|Escalation & Ambiguity Resolution]]                             | 91/100          | 2026-10-07        |
+| 3   | [[5 Context Management & Reliability/3 Error Propagation in Multi-Agent Systems/1 resumen\|Error Propagation in Multi-Agent Systems]]               | 84/100          | 2026-10-06        |
+| 4   | [[5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen\|Codebase Exploration & Context Degradation]]           |                 |                   |
+| 5   | [[5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen\|Human Review & Confidence Calibration]]                     |                 |                   |
+| 6   | [[5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen\|Information Provenance & Multi-Source Synthesis]] |                 |                   |
