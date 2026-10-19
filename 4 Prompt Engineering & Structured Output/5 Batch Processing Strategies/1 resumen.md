@@ -46,8 +46,21 @@ Cuando el negocio exige un SLA total (ej. 30 horas) para cada request individual
 > [!note] Por qué importa el orden: detección temprana, no un segundo intento gratis
 > El colchón de 6h **no alcanza** para absorber un segundo ciclo completo de 24h si un batch expira — `24h + 24h = 48h` supera cualquier SLA razonable de 30h, así que esto no es una garantía matemática contra el doble peor caso. Lo que sí logra el cronograma de "cada 4h" es **detectar el problema antes**: si el primer batch (hora 0) expira, te enteras en la hora 24 y todavía te quedan las 6h completas de margen para reaccionar; si en cambio hubieras esperado a acumular todo durante 6h y mandado un único batch al final, te enterarías del `expired` justo en la hora 30 — el límite del SLA, sin margen para hacer nada. Enviar seguido no elimina el riesgo del peor caso, lo reduce: minimiza cuántas requests quedan expuestas a él y da más tiempo de reacción a las que sí lo sufren.
 
-> [!note] Analogía
-> No es un mensajero que reintenta el mismo paquete dos veces — es un servicio de correo que despacha una nueva tanda de cartas cada 4 horas en vez de esperar y mandar una sola tanda grande al final del día. Si una tanda se pierde, te enteras rápido (porque la siguiente ya salió hace rato) y no descubres el problema recién cuando ya no queda tiempo de reaccionar.
+> [!note] Analogía: la lavandería con la promesa de "30 horas"
+> Tienes una lavandería y le prometes a tus clientes: ***"tu ropa lista en máximo 30 horas"*** — ese es tu **SLA**. Tú no lavas la ropa: la mandas en **camión** a una planta externa barata que solo promete ***"te la regreso en máximo 24 horas"*** — esa planta es la **Batches API**. Los clientes llegan a dejar ropa **a cualquier hora**, así que la pregunta es: **¿cada cuánto debe salir el camión?**
+>
+> El peor caso es el cliente que llega **justo después de que salió el camión**: su ropa espera en el mostrador hasta el siguiente camión, y luego la planta todavía puede tardar 24 h.
+>
+> | Si el camión sale cada... | Peor espera en mostrador | + planta (máx) | = Total | ¿Cumples las 30 h? |
+> |---|---|---|---|---|
+> | 4 horas | 4 h | 24 h | **28 h** | ✅ Sí, sobran 2 h |
+> | 6 horas | 6 h | 24 h | **30 h** | ⚠️ Justo, sin margen |
+> | 8 horas | 8 h | 24 h | **32 h** | ❌ Le fallas al cliente |
+>
+> - **No es un solo camión**: sale uno nuevo cada 4 h, siempre, aunque los anteriores sigan en la planta. Cada camión lleva solo la ropa que llegó desde el anterior — cada camión es un **batch distinto**.
+> - **Si la planta pierde una carga** (`expired`): como los camiones salen seguido, te enteras pronto y todavía tienes tiempo de lavar esa ropa tú mismo de urgencia (API síncrona). Si hubieras juntado todo el día en un solo camión, te enterarías cuando la promesa ya se venció.
+>
+> **En una frase**: el SLA cuenta desde que llega el cliente, no desde que sale el camión — por eso el camión debe salir seguido, para que nadie espere de más en el mostrador.
 
 ### 4. Manejo de fallos de batch: reenviar solo lo que falló
 
@@ -81,6 +94,33 @@ La API de batch no soporta tool calling de múltiples turnos dentro de una sola 
 - Correr un loop agéntico completo dentro de una sola request de batch.
 
 Si un workflow necesita ejecutar una tool a mitad de procesamiento y continuar con ese resultado, ese paso debe correr en la **API síncrona** — no en batch.
+
+> [!note] Analogía: llamada telefónica vs. carta sellada
+> - **Messages API (síncrona)** = una llamada con un asistente. Le preguntas algo, te dice *"espera, búscame el saldo del cliente"*, tú lo buscas, se lo dices, y sigue. Varias idas y vueltas, pero cada una tarda segundos porque los dos siguen en la línea.
+> - **Message Batches API** = mandar cartas selladas a una oficina que las contesta de noche. Si a mitad de la carta el asistente necesita el saldo, **no puede llamarte** — no estás ahí, y el dato vive en tu sistema. Solo puede escribir *"necesito el saldo"* y cerrar el sobre. **Esa carta ya terminó.** Para seguir hay que mandar otra carta nueva, que puede tardar otras 24 h.
+
+#### Por qué con la Messages API no es una limitación
+
+La clave: **el modelo nunca ejecuta tus tools**. El "multi-turn" en realidad son **varias requests separadas que coordina tu código**:
+
+1. Tu código manda la request con `tools` y el mensaje del usuario.
+2. Claude responde con `stop_reason: "tool_use"` y un bloque `tool_use` — la request **termina ahí**, Claude no se queda esperando.
+3. Tu código ejecuta la tool en tu propio sistema.
+4. Tu código manda una **nueva** request con todo el historial + el bloque `tool_result`.
+5. Se repite hasta que `stop_reason` sea `end_turn`.
+
+Cada vuelta tarda segundos, así que el loop agéntico completo se siente como una sola operación.
+
+#### Por qué con la Batches API sí lo es
+
+Cada item del batch (identificado por su `custom_id`) es **exactamente una request = una sola vuelta del loop**. El batch procesa el item en los servidores de Anthropic, guarda el resultado y sigue con el siguiente — **no existe un punto donde tu código intervenga a mitad del item**. Si Claude pide una tool, el item termina en `tool_use` sin respuesta. Para continuar habría que esperar a que termine el batch, ejecutar la tool y mandar **un batch nuevo** con el `tool_result`:
+
+| Vuelta | Messages API | Batches API |
+|---|---|---|
+| 1 → pide tool | ~2 s | hasta 24 h |
+| 2 → pide otra tool | ~2 s | hasta 24 h |
+| 3 → respuesta final | ~2 s | hasta 24 h |
+| **Total** | **~6 s** | **hasta 72 h (peor caso), sin SLA** |
 
 > [!note] Vigencia: server tools vs. client tools
 > La guía de certificación (v1.0 del exam guide) establece esta limitación tal cual, sin distinguir tipos de tool, y esa es la respuesta que el examen espera. La documentación actual de Anthropic distingue entre **server tools** (web search, web fetch, code execution, conectores MCP, tool search) — que sí corren su propio loop agéntico del lado del servidor incluso dentro de una request de batch, y pueden devolver `stop_reason: "pause_turn"` para continuar en una request de seguimiento — y **client tools** (las que ejecuta tu propio código), que siguen sin poder completar un loop dentro de un item de batch: la request termina en `tool_use`, tu código ejecuta la tool fuera del batch, y se envía una request de seguimiento por separado. Para el examen, la regla a aplicar es la de la guía: sin multi-turn tool calling dentro de batch, así que un paso que necesita ejecutar una tool a mitad de proceso va en la API síncrona.
