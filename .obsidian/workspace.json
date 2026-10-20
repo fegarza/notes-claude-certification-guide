@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "c5aed1048aa321fb",
+            "id": "f9daf8f830dc720a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md",
+                "file": "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
                 "mode": "source",
                 "source": false
               },
@@ -36,26 +36,12 @@
             }
           },
           {
-            "id": "f75ef7f4f78afe9a",
+            "id": "57c8c7575b6b3a74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 resumen"
-            }
-          },
-          {
-            "id": "f1777a452475ca52",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
+                "file": "5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen.md",
                 "mode": "source",
                 "source": false
               },
@@ -63,8 +49,7 @@
               "title": "1 resumen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git worktr",
+                "query": "preCompact",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -266,28 +251,31 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "c5aed1048aa321fb",
+  "active": "3eecb1eab8b07257",
   "lastOpenFiles": [
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/5 results.md",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
+    "README.md.tmp.14988.bd0f822720f5",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/5 results.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md.tmp.14988.15ce3e3f46f9",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md.tmp.14988.1cb6b3cf447d",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md",
+    "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md.tmp.14988.adf3b911e77a",
     "README.md",
-    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md",
-    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen.md",
     "5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen.md",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/5 results.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen.md",
     "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen.md",
     "README.md.tmp.32128.84bbd0a097d6",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/5 results.md",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/5 results.md.tmp.32128.626be4e42fd5",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/1 resumen.md",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedWMR0oa",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedyMNlfw",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedX4MsSV",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedZcxzu6",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedvx7nWD",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedQbMFSi",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/progreso-4-6-multi-instance-multi-pass-review.md.tmp.32128.cff1d46c3b25",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/progreso-4-6-multi-instance-multi-pass-review.md.tmp.32128.e98f7dd25f75",
     "4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/1 resumen.md",
     "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/progreso-4-6-multi-instance-multi-pass-review.md",
     "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md",
@@ -300,9 +288,6 @@
     "4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/5 results.md",
     "5 Context Management & Reliability/1 Context Window Management/4 test.md",
     "5 Context Management & Reliability/1 Context Window Management/5 results.md",
-    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md",
-    "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
-    "2 Tool Design & MCP Integration/4 MCP Server Integration/1 resumen.md",
-    "2 Tool Design & MCP Integration/4 MCP Server Integration/5 results.md"
+    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md"
   ]
 }

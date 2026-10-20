@@ -23,7 +23,7 @@
 | 2   | [[2 Tool Design & MCP Integration/2 Structured Error Responses/1 resumen\|Structured Error Responses]]           | 78/100          | 2026-10-06        |
 | 3   | [[2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen\|Tool Distribution & Tool Choice]] | 62/100          | 2026-10-09        |
 | 4   | [[2 Tool Design & MCP Integration/4 MCP Server Integration/1 resumen\|MCP Server Integration]]                   | 93/100          | 2026-10-12        |
-| 5   | [[2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen\|Built-in Tools]]                                   |                 |                   |
+| 5   | [[2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen\|Built-in Tools]]                                   | 86/100          | 2026-10-19        |
 
 ## 3 Claude Code Configuration & Workflows
 
