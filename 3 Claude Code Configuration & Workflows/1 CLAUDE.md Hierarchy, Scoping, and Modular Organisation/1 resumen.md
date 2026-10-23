@@ -67,6 +67,20 @@ Coding standards:
   - **`settings.json`**: el cliente lo aplica sin importar lo que Claude decida (cadena de precedencia: managed policy > local > project > user, y managed siempre gana).
   - **Hooks**: se disparan en puntos fijos del ciclo de vida, sin depender de la interpretación de Claude.
 
+#### Dónde vive cada nivel de `settings.json`
+
+| Nivel (mayor → menor precedencia) | Ubicación | ¿Se versiona con git? |
+|---|---|---|
+| **Managed policy** | Ruta del sistema (Windows: `C:\Program Files\ClaudeCode\managed-settings.json`) | No, lo administra IT/admin |
+| **Local** | `.claude/settings.local.json` (en el repo) | No (gitignored automáticamente) |
+| **Project** | `.claude/settings.json` (en el repo) | Sí, se comparte con el equipo |
+| **User** | `~/.claude/settings.json` (en tu home) | No, aplica a todos tus proyectos |
+
+> [!note] Misma lógica que `CLAUDE.local.md`
+> El sufijo `.local` significa "mío, para este repo, sin compartir", igual que `CLAUDE.local.md` frente a `CLAUDE.md`.
+>
+> *Las rutas vienen de la documentación oficial de Claude Code, no de la guía de certificación.*
+
 ## Trampas de examen
 
 > [!warning] Trampa 1 — Nuevo integrante del equipo recibe comportamiento inconsistente

@@ -55,5 +55,5 @@
 | 2   | [[5 Context Management & Reliability/2 Escalation & Ambiguity Resolution/1 resumen\|Escalation & Ambiguity Resolution]]                             | 91/100          | 2026-10-07        |
 | 3   | [[5 Context Management & Reliability/3 Error Propagation in Multi-Agent Systems/1 resumen\|Error Propagation in Multi-Agent Systems]]               | 84/100          | 2026-10-06        |
 | 4   | [[5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen\|Codebase Exploration & Context Degradation]]           | 69/100          | 2026-10-15        |
-| 5   | [[5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen\|Human Review & Confidence Calibration]]                     |                 |                   |
-| 6   | [[5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen\|Information Provenance & Multi-Source Synthesis]] |                 |                   |
+| 5   | [[5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen\|Human Review & Confidence Calibration]]                     | 82/100          | 2026-10-22        |
+| 6   | [[5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen\|Information Provenance & Multi-Source Synthesis]] | 82/100          | 2026-10-20        |

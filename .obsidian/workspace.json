@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4f2fcaea254aa673",
+        "id": "8ab6814cee0fa3c9",
         "type": "tabs",
         "children": [
           {
-            "id": "3eecb1eab8b07257",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "f9daf8f830dc720a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 resumen"
-            }
-          },
-          {
-            "id": "57c8c7575b6b3a74",
+            "id": "bd331a147682713d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,8 +20,23 @@
               "icon": "lucide-file",
               "title": "1 resumen"
             }
+          },
+          {
+            "id": "61b90a09126bc225",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5 Context Management & Reliability/5 Human Review & Confidence Calibration/3 cuestionario.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3 cuestionario"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "preCompact",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,12 +94,11 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 484.69157791137695
   },
   "right": {
     "id": "4bebf2b7d88b9c8a",
@@ -251,8 +237,36 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3eecb1eab8b07257",
+  "active": "61b90a09126bc225",
   "lastOpenFiles": [
+    "5 Context Management & Reliability/5 Human Review & Confidence Calibration/progreso-5-5-human-review-confidence-calibration.md.tmp.28568.af1c291ccb24",
+    "5 Context Management & Reliability/5 Human Review & Confidence Calibration/progreso-5-5-human-review-confidence-calibration.md",
+    "5 Context Management & Reliability/5 Human Review & Confidence Calibration/progreso-5-5-human-review-confidence-calibration.md.tmp.28568.03dc79ff5c45",
+    "5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen.md",
+    "5 Context Management & Reliability/5 Human Review & Confidence Calibration/3 cuestionario.md",
+    "README.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen.md",
+    "README.md.tmp.27560.5c76ccaa587c",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/5 results.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/5 results.md.tmp.27560.48787648c123",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/progreso-5-6-information-provenance.md.tmp.27560.dba6914b4058",
+    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/progreso-5-6-information-provenance.md",
+    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/progreso-5-6-information-provenance.md.tmp.27560.254b8c6447a3",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen.md.tmp.27560.0af926d4d83a",
+    "5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen.md",
+    "1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/2 Custom Slash Commands and Skills/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/1 resumen.md",
+    "3 Claude Code Configuration & Workflows/1 CLAUDE.md Hierarchy, Scoping, and Modular Organisation/2 example.md",
+    "3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/1 resumen.md",
+    "1 Agentic Architecture and orchestation/7 Session State and Resumption/1 resumen.md",
+    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md",
+    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
+    "1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/1 resumen.md",
+    "1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen.md",
+    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen.md",
+    "4 Prompt Engineering & Structured Output/1 System Prompts with Explicit Criteria/1 resumen.md",
     "2 Tool Design & MCP Integration/5 Built-in Tools/1 resumen.md",
     "README.md.tmp.14988.bd0f822720f5",
     "2 Tool Design & MCP Integration/5 Built-in Tools/5 results.md",
@@ -260,34 +274,6 @@
     "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md.tmp.14988.1cb6b3cf447d",
     "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md",
     "2 Tool Design & MCP Integration/5 Built-in Tools/progreso-2-5-built-in-tools.md.tmp.14988.adf3b911e77a",
-    "README.md",
-    "5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen.md",
-    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen.md",
-    "1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen.md",
-    "1 Agentic Architecture and orchestation/5 Agent SDK Hooks/5 results.md",
-    "5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen.md",
-    "2 Tool Design & MCP Integration/3 Tool Distribution & Tool Choice/1 resumen.md",
-    "README.md.tmp.32128.84bbd0a097d6",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/5 results.md",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/5 results.md.tmp.32128.626be4e42fd5",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/1 resumen.md",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedWMR0oa",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedyMNlfw",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedX4MsSV",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/sedZcxzu6",
-    "4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/1 resumen.md",
-    "4 Prompt Engineering & Structured Output/6 Multi-Instance and Multi-Pass Review/progreso-4-6-multi-instance-multi-pass-review.md",
-    "1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen.md",
-    "1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen.md",
-    "2 Tool Design & MCP Integration/2 Structured Error Responses/1 resumen.md",
-    "5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/5 results.md",
-    "5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen.md",
-    "5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/2 example.md",
-    "4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/4 test.md",
-    "4 Prompt Engineering & Structured Output/5 Batch Processing Strategies/5 results.md",
-    "5 Context Management & Reliability/1 Context Window Management/4 test.md",
-    "5 Context Management & Reliability/1 Context Window Management/5 results.md",
-    "5 Context Management & Reliability/1 Context Window Management/1 resumen.md"
+    "3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen.md"
   ]
 }
