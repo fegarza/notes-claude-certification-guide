@@ -1,47 +1,45 @@
 # Resultados — Tutor socrático: Agentic loop
 
-> [!info] Sesión evaluada el 2026-09-18
+> [!info] Sesión evaluada el 2026-10-26
 > Repaso basado en [[1 resumen]].
 
 ## Resumen general del desempeño
 
-**Nivel de entendimiento: 75/100**
+**Nivel de entendimiento: 88/100**
 
-Buen dominio de los mecanismos centrales del agentic loop: el ciclo de 4 pasos, el rol de `stop_reason`, la necesidad de agregar resultados de herramientas al historial, y dos de las cuatro trampas de examen (contenido tipo texto y `tool_choice: "any"`) quedaron claras y bien explicadas. Las áreas débiles están en los matices más finos: qué hacer con valores de `stop_reason` distintos a los dos principales, cuándo ceder la flexibilidad del modelo a reglas deterministas, y la diferencia exacta entre "loop descontrolado" y "terminación prematura" al evaluar el distractor de límites de iteración.
+De 10 preguntas, 8 fueron correctas y 2 parcialmente correctas. Hay una mejora clara respecto a la sesión anterior (75/100): los dos puntos débiles de entonces, los valores adicionales de `stop_reason` y el distractor de límites de iteración ante una terminación prematura, ahora se respondieron completos y sin pistas. Lo que queda por pulir es conceptual y de vocabulario de examen: por qué se prefiere el enfoque model-driven (flexibilidad) y qué distingue al agentic loop de un loop de reintentos.
 
 ## Conceptos con buen dominio
 
-- Los dos valores principales de `stop_reason` (`tool_use`, `end_turn`) y qué acción dispara cada uno — respuesta directa y completa.
-- La necesidad de agregar el resultado de la herramienta al historial de conversación — explicó correctamente la consecuencia de omitirlo.
-- Trampa 1 (revisar tipo de contenido en vez de `stop_reason`) — identificó el caso exacto (texto + `tool_use` en la misma respuesta) sin necesidad de pistas.
-- Trampa 4 (forzar `tool_choice: "any"`) — conectó bien la causa (forzar siempre herramienta) con el riesgo (loop infinito).
+- **`stop_reason` como señal de control:** identificó de inmediato que `"end_turn"` termina el loop y que la señal viene en la respuesta de la Messages API.
+- **Ciclo con `tool_use`:** describió bien cómo se ejecuta la herramienta y se agrega el resultado al historial antes de reenviar, y además entiende por qué ese paso es indispensable.
+- **Valores adicionales de `stop_reason`:** detectó el supuesto erróneo de que "todo lo que no sea `end_turn` es `tool_use`" y nombró `max_tokens`, `refusal` y `pause_turn`. Este punto era débil en la sesión anterior.
+- **Trampa 1 (`content[0].type == "text"`):** explicó con precisión que puede llegar texto junto con un `tool_use` en la misma respuesta.
+- **Distractor de límites de iteración:** distinguió con claridad entre loops descontrolados y terminaciones prematuras. También era débil en la sesión anterior.
+- **Trampa 2 (límite de iteraciones como control principal):** nombró los dos problemas opuestos: corta trabajo útil o fuerza iteraciones innecesarias.
+- **Trampa 3 (parsear lenguaje natural):** explicó la ambigüedad del texto y el riesgo de que una frase de cierre aparezca con un `tool_use` pendiente.
+- **Trampa 4 (`tool_choice: "any"`):** conectó directamente forzar herramientas con el riesgo de un loop infinito.
 
 ## Áreas que necesitan revisión
 
-### Valores adicionales de `stop_reason` en producción
+### Por qué se prefiere model-driven decision-making
 
-- **Qué pasó:** Al preguntar por la recomendación práctica ante valores como `pause_turn`, `max_tokens` o `refusal`, la respuesta fue que "ninguno es motivo para terminar el ciclo" — correcto en que no son `end_turn`, pero no capturó que la recomendación es "revisar por qué", no simplemente continuar el loop igual que con `tool_use`.
+- **Qué pasó:** Reconoció bien el enfoque model-driven en el escenario de la secuencia fija de herramientas. Pero al preguntarle por qué se prefiere, respondió cuándo conviene el enfoque contrario (código determinista) y no mencionó la razón central: la **flexibilidad**. Además formuló la excepción como "riesgo de error crítico irreversible", mientras que la guía usa el criterio de "cumplimiento determinista" en temas financieros, de seguridad o regulatorios.
 - **Contenido del resumen:**
-  > Más allá de los dos valores que evalúa el examen (`tool_use` y `end_turn`), las APIs en producción también devuelven: `pause_turn`, `max_tokens`, `stop_sequence`, `refusal`, y `model_context_window_exceeded`. La recomendación práctica: tratar cualquier valor que no sea `end_turn` como "todavía no terminó, hay que revisar por qué", en vez de asumir automáticamente que es `tool_use`.
-- **Sección:** [[1 resumen]] → "2. `stop_reason` es la única señal confiable" (solo como enlace de navegación).
-- **Analogía para reforzarlo:** Es como un semáforo con una luz amarilla intermitente que no es ni "sigue" (verde) ni "alto total" (rojo) — no significa "avanza igual que si fuera verde", significa "detente un momento y evalúa la situación antes de decidir qué hacer".
-
-### Cuándo ceder el enfoque dirigido por el modelo a reglas deterministas
-
-- **Qué pasó:** Al preguntar en qué situación las reglas programáticas deben imponerse sobre la flexibilidad del modelo, la respuesta fue genérica ("cuando queremos que algo pase el 100% de las veces") sin mencionar los dominios específicos que da el resumen: financiero, de seguridad o regulatorio.
-- **Contenido del resumen:**
+  > En un agentic loop, es Claude quien decide qué herramienta llamar según el contexto actual — lee la tarea, evalúa las herramientas disponibles, y elige una. Esto contrasta con árboles de decisión preconfigurados o secuencias fijas de herramientas donde el desarrollador programa a mano el orden de ejecución.
+  >
   > El enfoque dirigido por el modelo es preferido porque es flexible — **excepto** cuando la lógica de negocio exige cumplimiento determinista (temas financieros, de seguridad o regulatorios), donde la aplicación programática de reglas debe imponerse sobre la flexibilidad del modelo.
-- **Sección:** [[1 resumen]] → "3. Toma de decisiones dirigida por el modelo (model-driven decision-making)" (solo como enlace de navegación).
-- **Analogía para reforzarlo:** Un piloto de avión puede improvisar la ruta según el clima, pero en el aterrizaje hay un checklist fijo que no se salta nunca — no es cuestión de preferencia, es porque el costo de un error ahí es demasiado alto.
+- **Sección:** [[1 resumen]] → "3. Toma de decisiones dirigida por el modelo (model-driven decision-making)"
+- **Analogía para reforzarlo:** Un GPS que recalcula la ruta según el tráfico (model-driven) llega mejor que un mapa impreso con una ruta fija, porque se adapta a lo que encuentra. Pero si la ley prohíbe pasar por cierta calle, eso no se deja a criterio del GPS: es una regla que se impone desde fuera.
 
-### Distractor de límites de iteración ante terminación prematura
+### El agentic loop no es un loop de reintentos
 
-- **Qué pasó:** Ante el escenario específico de terminación prematura del loop, la respuesta describió pros/contras generales de los límites de iteración, sin señalar que el error del distractor es aplicar la solución equivocada al problema equivocado: los límites de iteración resuelven loops que **no terminan** (descontrolados), no loops que **terminan antes de tiempo**.
+- **Qué pasó:** Rebatió correctamente que el loop sea "un buen system prompt": está definido en código y se controla con `stop_reason`. Pero no supo explicar por qué tampoco es "un loop de reintentos", que es una de las tres cosas que el argumento central dice explícitamente que el agentic loop **no** es.
 - **Contenido del resumen:**
-  > El examen suele presentar "agregar un límite de iteraciones" como arreglo plausible ante una terminación prematura del loop. Es incorrecto: los límites de iteración resuelven loops descontrolados (que no terminan), no terminaciones prematuras (que terminan antes de tiempo). El arreglo correcto ante una terminación prematura siempre es revisar `stop_reason` correctamente.
-- **Sección:** [[1 resumen]] → callout "Distractor frecuente en el examen" (solo como enlace de navegación).
-- **Analogía para reforzarlo:** Si el despertador suena demasiado temprano, la solución no es "poner un límite a cuántas veces puede sonar" — el problema es que la hora está mal configurada, no que suene de más.
+  > El agentic loop es el ciclo determinista de control de flujo (definido en código) detrás de todo agente basado en Claude — no es un truco de prompt, ni un loop de reintentos, ni simplemente un turno de chatbot. El único mecanismo confiable para controlarlo es el campo `stop_reason` de la respuesta de la Messages API.
+- **Sección:** [[1 resumen]] → "Argumento central"
+- **Analogía para reforzarlo:** Volver a marcar porque la llamada se cortó es un reintento: algo falló y repites lo mismo. Un cocinero que vuelve a la cocina porque el cliente pidió otro platillo no está reintentando nada. Es el flujo normal del trabajo, impulsado por una petición nueva. El agentic loop es lo segundo: vuelve a llamar a Claude porque Claude **pidió** una herramienta (`tool_use`), no porque algo haya fallado.
 
 ## Siguiente paso recomendado
 
-Antes de intentar [[4 test]], repasa específicamente el callout de "Distractor frecuente en el examen" y la sección sobre valores adicionales de `stop_reason` — son los dos puntos donde el examen real suele tender la trampa. El resto del tema está en buen nivel.
+Repasa el "Argumento central" (qué **no** es un agentic loop) y la sección 3 sobre model-driven decision-making, con atención al criterio exacto de la excepción (cumplimiento determinista: financiero, seguridad, regulatorio). Con eso estás listo para [[4 test]].

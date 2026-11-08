@@ -7,13 +7,14 @@
 
 | #   | Tema                                                                                                                                     | % Entendimiento | Última evaluación |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------- |
-| 1   | [[1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen\|Agentic loop]]                                                       | 75/100          | 2026-09-18        |
+| 1   | [[1 Agentic Architecture and orchestation/1 Agentic loop/1 resumen\|Agentic loop]]                                                       | 88/100          | 2026-10-26        |
 | 2   | [[1 Agentic Architecture and orchestation/2 Multi-Agent Orchestration/1 resumen\|Multi-Agent Orchestration]]                             | 90/100          | 2026-09-18        |
 | 3   | [[1 Agentic Architecture and orchestation/3 Subagent Invocation and Context Passing/1 resumen\|Subagent Invocation and Context Passing]] | 97/100          | 2026-09-18        |
 | 4   | [[1 Agentic Architecture and orchestation/4 Workflow Enforcement and Handoff/1 resumen\|Workflow Enforcement and Handoff]]               | 77/100          | 2026-09-18        |
-| 5   | [[1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen\|Agent SDK Hooks]]                                                 | 68/100          | 2026-09-19        |
-| 6   | [[1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen\|Task Decomposition Strategies]]                     | 78/100          | 2026-09-19        |
+| 5   | [[1 Agentic Architecture and orchestation/5 Agent SDK Hooks/1 resumen\|Agent SDK Hooks]]                                                 | 85/100          | 2026-10-25        |
+| 6   | [[1 Agentic Architecture and orchestation/6 Task Decomposition Strategies/1 resumen\|Task Decomposition Strategies]]                     | 88/100          | 2026-10-25        |
 | 7   | [[1 Agentic Architecture and orchestation/7 Session State and Resumption/1 resumen\|Session State and Resumption]]                       | 96/100          | 2026-09-19        |
+|     |                                                                                                                                          |                 |                   |
 
 ## 2 Tool Design & MCP Integration
 
@@ -34,7 +35,7 @@
 | 3   | [[3 Claude Code Configuration & Workflows/3 Path-Specific Rules for Conditional Convention Loading/1 resumen\|Path-Specific Rules for Conditional Convention Loading]] | 86/100          | 2026-09-27        |
 | 4   | [[3 Claude Code Configuration & Workflows/4 Plan Mode vs Direct Execution/1 resumen\|Plan Mode vs Direct Execution]]                                                   | 77/100          | 2026-09-27        |
 | 5   | [[3 Claude Code Configuration & Workflows/5 Iterative Refinement Techniques/1 resumen\|Iterative Refinement Techniques]]                                               | 88/100          | 2026-09-29        |
-| 6   | [[3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen\|CI-CD Integration]]                                                                           | 70/100          | 2026-09-27        |
+| 6   | [[3 Claude Code Configuration & Workflows/6 CI-CD Integration/1 resumen\|CI-CD Integration]]                                                                           | 91/100          | 2026-11-03        |
 
 ## 4 Prompt Engineering & Structured Output
 
@@ -54,6 +55,6 @@
 | 1   | [[5 Context Management & Reliability/1 Context Window Management/1 resumen\|Context Window Management]]                                             | 85/100          | 2026-10-01        |
 | 2   | [[5 Context Management & Reliability/2 Escalation & Ambiguity Resolution/1 resumen\|Escalation & Ambiguity Resolution]]                             | 91/100          | 2026-10-07        |
 | 3   | [[5 Context Management & Reliability/3 Error Propagation in Multi-Agent Systems/1 resumen\|Error Propagation in Multi-Agent Systems]]               | 84/100          | 2026-10-06        |
-| 4   | [[5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen\|Codebase Exploration & Context Degradation]]           | 69/100          | 2026-10-15        |
+| 4   | [[5 Context Management & Reliability/4 Codebase Exploration & Context Degradation/1 resumen\|Codebase Exploration & Context Degradation]]           | 86/100          | 2026-11-08        |
 | 5   | [[5 Context Management & Reliability/5 Human Review & Confidence Calibration/1 resumen\|Human Review & Confidence Calibration]]                     | 82/100          | 2026-10-22        |
 | 6   | [[5 Context Management & Reliability/6 Information Provenance & Multi-Source Synthesis/1 resumen\|Information Provenance & Multi-Source Synthesis]] | 82/100          | 2026-10-20        |
