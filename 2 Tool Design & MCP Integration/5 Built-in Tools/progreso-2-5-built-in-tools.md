@@ -2,8 +2,28 @@
 
 - **Objetivo**: examen CCAR-F (Task Statement 2.5)
 - **Nivel inicial**: leyó el resumen hace tiempo; pidió empezar desde cero. Diagnóstico: Grep para contenido correcto; Edit → Read + Write correcto, pero razón imprecisa ("solo reemplaza 1 a la vez" en vez de "requiere texto único para saber cuál"); alias de barril correcto, pero omitió el paso de Read para descubrir el alias.
-- **Inicio**: 2026-10-19 · **Última sesión**: 2026-10-19
-- **Fase actual**: 2 Evaluación final
+- **Inicio**: 2026-10-19 · **Última sesión**: 2026-11-09
+- **Fase actual**: Sesión 2 — Fase 1 (enfoque: combinaciones de herramientas)
+
+## Sesión 2 (2026-11-09) — Combinaciones de herramientas por caso de uso
+
+Pedido: enfocarse únicamente en las secuencias/combinaciones de herramientas según el escenario (fuente: resumen + claudecertificationguide.com/learn/2-tool-design-mcp/2-5-built-in-tools).
+
+Diagnóstico:
+- D1 (`validateUser`, cambio de firma): acertó Grep → Read → Grep y por qué falla el Grep único. Omitió: leer solo definición + barril (no todos los archivos), Grep del nombre del módulo barril, repetir hasta no hallar nombres nuevos.
+- D2 (`payments.config.yaml` ×3 entornos, `timeout: 30` duplicado): eligió Glob (bien) pero patrón por carpetas `dev/ staging/ prod/` en vez de por nombre `**/payments.config.yaml`; saltó Edit e hizo Read + Write directo (en examen: Edit primero, Read + Write solo cuando Edit falla).
+
+### Mapa de combinaciones
+
+| # | Combinación | Caso típico | Estado | Aciertos seguidos tras fallo | Notas |
+|---|---|---|---|---|---|
+| C1 | Grep → Read | Bug con mensaje de error: hallar punto de entrada y seguir imports | pendiente | – | |
+| C2 | Grep → Read → Grep (+ Grep del barril, repetir) | Tracing Function Usage Across Wrapper Modules | en curso | 0 | D1 incompleto |
+| C3 | Glob → (Grep) → Read | La pista es el nombre/ubicación del archivo (configs, tests) | pendiente | 0 | D2: patrón por carpetas |
+| C4 | Grep → Glob → Grep | Función deprecada: callers + tests hermanos + tests vía wrapper | pendiente | – | |
+| C5 | Read → Edit → (falla) → Read + Write | Modificar código; Edit siempre primero | pendiente | 0 | D2: saltó Edit |
+| C6 | Cadena completa de refactor: Grep → Glob → Read → Edit (y Bash no permitido) | Migrar todos los callers a una API nueva | pendiente | – | |
+| C7 | Discriminar: ¿qué combinación aplica a este escenario? | Intercalado de casos mezclados | pendiente | – | |
 
 ## Mapa del tema
 
@@ -26,6 +46,8 @@
 | 2026-10-19 | 3 | Edit falla porque "solo puede reemplazar 1 a la vez" | Edit exige que `old_string` sea único en el archivo para saber cuál ocurrencia cambiar; es un mecanismo de seguridad, no un límite de cantidad | Sí (2 seguidos) |
 | 2026-10-19 | 6 | Basta con hacer Grep también del alias | Primero hay que descubrir el alias: Read del archivo que define/re-exporta (barril) para ver los nombres exportados, y luego Grep de cada nombre | Sí (2 seguidos) |
 | 2026-10-19 | 7 | Patrón Glob `**/LoginService.test.**` | `**/LoginService.test.*`: `**` solo como segmento de carpetas; `*` para la extensión | Sí (aclarado) |
+| 2026-11-09 | C3 | Glob "por carpetas dev/ staging/ prod/" sin conocer su ubicación | Patrón por nombre: `**/payments.config.yaml` (el `**` cubre cualquier carpeta) | No |
+| 2026-11-09 | C5 | Si el texto aparece 2 veces, saltar Edit e ir directo a Read + Write | Examen: Edit primero; Read + Write es el fallback cuando Edit falla por ancla no única | No |
 
 ## Mnemotecnias
 
